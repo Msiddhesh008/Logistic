@@ -17,10 +17,35 @@ body{
 
 
 
+/* ===[ Swiper ]=== */
+.my-slider{
+  height: 100vh;
+  width: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ===[ Swiper End ]=== */
+
+
 .Slider-child{
+  
   display: flex;
   gap:2rem;
-  display: none;
+  padding: 2rem;
 }
 
 .trans-img{
@@ -46,19 +71,15 @@ body{
 
 .arrow-left{
   position: absolute;
-    left: 151px;
+    left: 100px;
     top: 283px;
-    background: green;
-    width: 38px;
-    border-radius: 50px;
+    color: green;
 }
 .arrow-right{
   position: absolute;
-    right: 151px;
+    right: 100px;
     top: 283px;
-    background: green;
-    width: 38px;
-    border-radius: 50px;
+    color: green;
 }
 
 .a {
@@ -136,5 +157,7 @@ body{
 .accordion-button:not(.collapsed)::after{
   background-image: none;
 }
+
+
 
 
