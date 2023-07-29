@@ -1,11 +1,9 @@
-var prevBtn = document.getElementById('prev')
-var nextBtn = document.getElementById('next')
 var firstImg = document.querySelectorAll('img')[0]
 let carousel = document.querySelector('.carousel')
+var icon = document.querySelectorAll('i')
 
-prevBtn.addEventListener('click', () => {
-  carousel.scrollLeft += -firstImg.clientWidth + 14
-})
-nextBtn.addEventListener('click', () => {
-  carousel.scrollLeft += firstImg.clientWidth + 14
+icon.forEach((eachIcon)=>{
+  eachIcon.addEventListener('click', () => {
+  carousel.scrollLeft += eachIcon.id === 'next' ? firstImg.clientWidth + 14 : -firstImg.clientWidth + 14
+  })
 })
