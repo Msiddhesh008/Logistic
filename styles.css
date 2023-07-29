@@ -1,163 +1,60 @@
-.common-width{
-  width: 1000px;
-  margin: auto !important;
-}
-
 body{
-  /* margin: 0; */
-  
-    font-family: 'Poppins';
-}
-
-.Slider-Container{
-  display: flex;
-  text-align: center;
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
 
 }
 
-
-
-/* ===[ Swiper ]=== */
-.my-slider{
+section{
+  background-color: darkslategray;
+  width: 100vw;
   height: 100vh;
-  width: 100%;
-}
-
-.swiper {
-  width: 100%;
-  height: 100%;
-  
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
-
-/* ===[ Swiper End ]=== */
-
-
-.Slider-child{
-  
-  display: flex;
-  gap:2rem;
-  padding: 2rem;
+.wrapper{
+  width: 75%;
+  height: 350px;
+  position: relative;
 }
 
-.trans-img{
-  /* width:90%; */
-  width: 300px;
-}
-
-.Trans-btn{
-  border: none;
-    width: 280px;
-    outline: none;
-    padding: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    background: #1A5D1A;
-    color: white;
-}
-
-.Image-Card .Transport{
-  padding-top: 40px;
-}
-
-.arrow-left{
-  position: absolute;
-    left: 100px;
-    top: 283px;
-    color: green;
-}
-.arrow-right{
-  position: absolute;
-    right: 100px;
-    top: 283px;
-    color: green;
-}
-
-.a {
-  color: unset !important;
-  text-decoration: unset;
-}
-
-.prev , .next {
-  
+#prev{
   cursor: pointer;
-    color: white;
-    text-decoration: auto;
-    font-size: 25px;
-    font-weight: bold;
-    border-radius: 0 3px 3px 0;
-    user-select: none; 
+  color: #fff;
+  font-size: 2rem;
+  left: -16px;
+  top: 45%;
+  position: absolute;
+  z-index: 1;
 }
 
-/* .Card-Image .card-img{
-  height:100%;
-  width: 100%;
-  object-fit: cover;
-} */
-
-
-.choose-img{
-  width: 730px;
-    margin-left: -133px;
+#next{
+  cursor: pointer;
+  color: #fff;
+  font-size: 2rem;
+  right: -16px;
+  top: 45%;
+  position: absolute;
+}
+.wrapper .carousel{
+  display: flex;
+  height: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  scroll-behavior: smooth;
 }
 
-.Choose-Content{
-  text-align: center;
-    font-size: 40px;
-    font-weight: bold;
-    color: darkgreen;
-}
 
-.Choose-Accor-truckimg{
-  padding-top: 50px;
-}
-
-.Accor-container{
-  padding-top: 60px;
-}
-
-.Accor-head{
-  margin: 6px;
-    font-weight: 600;
-    color: darkgreen;
-}
-
-.accordion-body{
-  background-color: #7D7463;
-  color: white;
-}
-
-.accordion-button:focus{
-  box-shadow: none;
-}
-
-.accordion {
-    --bs-accordion-active-color:unset; 
-   --bs-accordion-active-bg: unset;
-}
-
-.accordion-button::after{
-  background-image: none;
-  content:"\f0d7";
-  font-family: fontawesome;
-  width: auto;
+.carousel img{
+  width: calc(100% / 2);
   height: auto;
-  font-size: 20px;
+  margin-left: 14px;
+  object-fit: cover;
 }
 
-.accordion-button:not(.collapsed)::after{
-  background-image: none;
+.carousel img:first-child{
+  margin-left: 0;
 }
-
-
-
-
