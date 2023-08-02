@@ -3,7 +3,6 @@ var firstImageCard = document.querySelectorAll('.Image-Card')[0]
 var ImageCard = document.querySelectorAll('.Image-Card')
 const prev = () => carousel.scrollLeft -= firstImageCard.clientWidth + 28
 
-
 setInterval(function() {next()}, 1000);
 
 const next = () => {
