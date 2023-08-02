@@ -6,7 +6,7 @@ body{
 }
 
 section{
-  background-color: darkslategray;
+  /* background-color: darkslategray; */
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -16,16 +16,16 @@ section{
 }
 
 .wrapper{
-  width: 75%;
-  height: 350px;
+  width: 70%;
+  /* height: 350px; */
   position: relative;
 }
 
 #prev{
   cursor: pointer;
-  color: #fff;
+  color:green;
   font-size: 2rem;
-  left: -40px;
+  left: -16px;
   top: 45%;
   position: absolute;
   z-index: 1;
@@ -33,9 +33,9 @@ section{
 
 #next{
   cursor: pointer;
-  color: #fff;
+  color: green;
   font-size: 2rem;
-  right: -46px;
+  right: -16px;
   top: 45%;
   position: absolute;
 }
@@ -43,38 +43,37 @@ section{
   display: flex;
   height: 100%;
   white-space: nowrap;
-  overflow-x: hidden;
+  overflow: hidden;
   scroll-behavior: smooth;
-  border-radius: 0.5rem;
-  padding: 14px;
+  /* background-color: red; */
 }
 
 
-.carousel img{
-  /* width: calc(100% / 2); */
-  height: auto;
-  margin-left: 18px;
-  object-fit: cover;
-  box-shadow: 5px 5px 10px #000000;
-  border-radius: 0.5rem;
+
+
+
+.Image-Card {
+  /* background-color: blue; */
+  margin-right: 28px;
 }
 
-.carousel img:first-child{
-  margin-left: 0;
+.trans-img{
+  /* width:90%; */
+  width: 300px;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 900px) {
-  .carousel img{
-    width: calc(100% / 2);
-  }
-  
+.Trans-btn{
+  border: none;
+    width: 100%;
+    outline: none;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #1A5D1A;
+    color: white;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 550px) {
-  .carousel img{
-    width: calc(100%)
-  }
-  
+.Image-Card .Transport{
+  padding-top: 40px;
 }
